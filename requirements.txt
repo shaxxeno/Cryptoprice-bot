@@ -1,0 +1,10 @@
+aiogram>=3.0.0b7
+environs~=9.0
+redis
+python-coinmarketcap~=0.5
+
+
+aiohttp~=3.8.4
+asyncio~=3.4.3
+bs4~=0.0.1
+beautifulsoup4~=4.11.2
