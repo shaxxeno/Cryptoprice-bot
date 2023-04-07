@@ -10,6 +10,7 @@ class DbConfig:
     password: str
     user: str
     database: str
+    port: str
 
 
 @dataclass
@@ -55,7 +56,8 @@ def load_config(path: str = None):
             host=env.str('DB_HOST'),
             password=env.str('POSTGRES_PASSWORD'),
             user=env.str('POSTGRES_USER'),
-            database=env.str('POSTGRES_DB')
+            database=env.str('POSTGRES_DB'),
+            port=env.str('DB_PORT')
         ),
         cmc=CoinMarketCap(
             cmc_api=env.str('CMC_API_KEY'),
